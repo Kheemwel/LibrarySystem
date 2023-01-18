@@ -1,0 +1,73 @@
+DROP TABLE Books
+DROP TABLE Students
+DROP TABLE IssueBooks
+DROP TABLE IssueHistory
+DROP TABLE ReturnHistory
+
+SELECT * FROM Books
+SELECT * FROM Students
+SELECT * FROM IssueBooks
+SELECT * FROM IssueHistory
+SELECT * FROM ReturnHistory
+
+CREATE TABLE Login(
+username varchar(100) NOT NUll,
+password varchar(100) NOT NULL
+)
+
+	CREATE TABLE Books(
+	bookID int IDENTITY(1,1) PRIMARY KEY,
+	bookName varchar(100) NOT NULL,
+	bookAuthor varchar(100) NOT NULL,
+	bookQuantity int NOT NULL,
+	bookAddDate date NOT NULL,
+	IsDeleted bit NOT NULL DEFAULT 0
+	)
+
+	CREATE table Students(
+	studentID int IDENTITY(1,1) PRIMARY KEY,
+	studentFirstName varchar(100) NOT NULL,
+	studentMiddleInitial varchar(2),
+	studentLastName varchar(100) NOT NULL,
+	studentNumber varchar(100) NOT NULL,
+	studentYear varchar(100) NOT NULL,
+	studentCourse varchar(100) NOT NULL,
+	studentAddDate date NOT NULL,
+	studentContactNumber varchar(100) NOT NULL,
+	studentEmail varchar(100) NOT NULL,
+	studentCurrentlyRentedBooks int DEFAULT 0,
+	IsDeleted bit NOT NULL DEFAULT 0
+	)
+
+	CREATE TABLE IssueBooks(
+	issueID int IDENTITY(1,1) PRIMARY KEY,
+	bookID int NOT NULL,
+	FOREIGN KEY (bookID) REFERENCES Books(bookID),
+	studentID int NOT NULL,
+	FOREIGN KEY (studentID) REFERENCES Students(studentID),
+	issueDate date NOT NULL,
+	dueDate date NOT NULL,
+	renewTimes int DEFAULT 0
+	)
+	CREATE TABLE IssueHistory(
+	issueID int IDENTITY(1,1) PRIMARY KEY,
+	bookID int NOT NULL,
+	FOREIGN KEY (bookID) REFERENCES Books(bookID),
+	studentID int NOT NULL,
+	FOREIGN KEY (studentID) REFERENCES Students(studentID),
+	issueDate date NOT NULL,
+	dueDate date NOT NULL,
+	renewTimes  int NOT NULL DEFAULT 0
+	)
+	CREATE TABLE ReturnHistory(
+	returnID int IDENTITY(1,1) PRIMARY KEY,
+	issueID int NOT NULL,
+	FOREIGN KEY (issueID) REFERENCES IssueHistory(issueID),
+	bookID int NOT NULL,
+	FOREIGN KEY (bookID) REFERENCES Books(bookID),
+	studentID int NOT NULL,
+	FOREIGN KEY (studentID) REFERENCES Students(studentID),
+	issueDate date NOT NULL,
+	dueDate date NOT NULL,
+	returnDate date NOT NULL,
+	)

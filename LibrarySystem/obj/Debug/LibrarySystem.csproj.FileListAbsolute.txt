@@ -1,0 +1,53 @@
+C:\Users\Acer\source\repos\LibrarySystem\LibrarySystem\bin\Debug\LibrarySystem.exe.config
+C:\Users\Acer\source\repos\LibrarySystem\LibrarySystem\bin\Debug\LibrarySystem.exe
+C:\Users\Acer\source\repos\LibrarySystem\LibrarySystem\bin\Debug\LibrarySystem.pdb
+C:\Users\Acer\source\repos\LibrarySystem\LibrarySystem\obj\Debug\LibrarySystem.csproj.AssemblyReference.cache
+C:\Users\Acer\source\repos\LibrarySystem\LibrarySystem\obj\Debug\LibrarySystem.csproj.SuggestedBindingRedirects.cache
+C:\Users\Acer\source\repos\LibrarySystem\LibrarySystem\obj\Debug\LibrarySystem.FrmAddBook.resources
+C:\Users\Acer\source\repos\LibrarySystem\LibrarySystem\obj\Debug\LibrarySystem.FrmAddStudent.resources
+C:\Users\Acer\source\repos\LibrarySystem\LibrarySystem\obj\Debug\LibrarySystem.FrmDeleteBook.resources
+C:\Users\Acer\source\repos\LibrarySystem\LibrarySystem\obj\Debug\LibrarySystem.FrmDeleteStudent.resources
+C:\Users\Acer\source\repos\LibrarySystem\LibrarySystem\obj\Debug\LibrarySystem.FrmIssueBook.resources
+C:\Users\Acer\source\repos\LibrarySystem\LibrarySystem\obj\Debug\LibrarySystem.FrmLogIn.resources
+C:\Users\Acer\source\repos\LibrarySystem\LibrarySystem\obj\Debug\LibrarySystem.FrmLibrarySystem.resources
+C:\Users\Acer\source\repos\LibrarySystem\LibrarySystem\obj\Debug\LibrarySystem.FrmRenewIssuedBook.resources
+C:\Users\Acer\source\repos\LibrarySystem\LibrarySystem\obj\Debug\LibrarySystem.FrmReturnBook.resources
+C:\Users\Acer\source\repos\LibrarySystem\LibrarySystem\obj\Debug\LibrarySystem.FrmUpdateBook.resources
+C:\Users\Acer\source\repos\LibrarySystem\LibrarySystem\obj\Debug\LibrarySystem.FrmUpdateStudent.resources
+C:\Users\Acer\source\repos\LibrarySystem\LibrarySystem\obj\Debug\LibrarySystem.Properties.Resources.resources
+C:\Users\Acer\source\repos\LibrarySystem\LibrarySystem\obj\Debug\LibrarySystem.UCBooks.resources
+C:\Users\Acer\source\repos\LibrarySystem\LibrarySystem\obj\Debug\LibrarySystem.UCDashboard.resources
+C:\Users\Acer\source\repos\LibrarySystem\LibrarySystem\obj\Debug\LibrarySystem.UCHistory.resources
+C:\Users\Acer\source\repos\LibrarySystem\LibrarySystem\obj\Debug\LibrarySystem.UCIssueBooks.resources
+C:\Users\Acer\source\repos\LibrarySystem\LibrarySystem\obj\Debug\LibrarySystem.UCReturnBooks.resources
+C:\Users\Acer\source\repos\LibrarySystem\LibrarySystem\obj\Debug\LibrarySystem.UCStudents.resources
+C:\Users\Acer\source\repos\LibrarySystem\LibrarySystem\obj\Debug\LibrarySystem.csproj.GenerateResource.cache
+C:\Users\Acer\source\repos\LibrarySystem\LibrarySystem\obj\Debug\LibrarySystem.csproj.CoreCompileInputs.cache
+C:\Users\Acer\source\repos\LibrarySystem\LibrarySystem\obj\Debug\LibrarySystem.exe
+C:\Users\Acer\source\repos\LibrarySystem\LibrarySystem\obj\Debug\LibrarySystem.pdb
+C:\Users\Beller\Documents\Visual Studio 2022\Projects\LibrarySystem\LibrarySystem\bin\Debug\LibrarySystem.exe
+C:\Users\Beller\Documents\Visual Studio 2022\Projects\LibrarySystem\LibrarySystem\bin\Debug\LibrarySystem.pdb
+C:\Users\Beller\Documents\Visual Studio 2022\Projects\LibrarySystem\LibrarySystem\obj\Debug\LibrarySystem.csproj.AssemblyReference.cache
+C:\Users\Beller\Documents\Visual Studio 2022\Projects\LibrarySystem\LibrarySystem\obj\Debug\LibrarySystem.csproj.SuggestedBindingRedirects.cache
+C:\Users\Beller\Documents\Visual Studio 2022\Projects\LibrarySystem\LibrarySystem\obj\Debug\LibrarySystem.FrmAddBook.resources
+C:\Users\Beller\Documents\Visual Studio 2022\Projects\LibrarySystem\LibrarySystem\obj\Debug\LibrarySystem.FrmAddStudent.resources
+C:\Users\Beller\Documents\Visual Studio 2022\Projects\LibrarySystem\LibrarySystem\obj\Debug\LibrarySystem.FrmDeleteBook.resources
+C:\Users\Beller\Documents\Visual Studio 2022\Projects\LibrarySystem\LibrarySystem\obj\Debug\LibrarySystem.FrmDeleteStudent.resources
+C:\Users\Beller\Documents\Visual Studio 2022\Projects\LibrarySystem\LibrarySystem\obj\Debug\LibrarySystem.FrmIssueBook.resources
+C:\Users\Beller\Documents\Visual Studio 2022\Projects\LibrarySystem\LibrarySystem\obj\Debug\LibrarySystem.FrmLogIn.resources
+C:\Users\Beller\Documents\Visual Studio 2022\Projects\LibrarySystem\LibrarySystem\obj\Debug\LibrarySystem.FrmLibrarySystem.resources
+C:\Users\Beller\Documents\Visual Studio 2022\Projects\LibrarySystem\LibrarySystem\obj\Debug\LibrarySystem.FrmRenewIssuedBook.resources
+C:\Users\Beller\Documents\Visual Studio 2022\Projects\LibrarySystem\LibrarySystem\obj\Debug\LibrarySystem.FrmReturnBook.resources
+C:\Users\Beller\Documents\Visual Studio 2022\Projects\LibrarySystem\LibrarySystem\obj\Debug\LibrarySystem.FrmUpdateBook.resources
+C:\Users\Beller\Documents\Visual Studio 2022\Projects\LibrarySystem\LibrarySystem\obj\Debug\LibrarySystem.FrmUpdateStudent.resources
+C:\Users\Beller\Documents\Visual Studio 2022\Projects\LibrarySystem\LibrarySystem\obj\Debug\LibrarySystem.Properties.Resources.resources
+C:\Users\Beller\Documents\Visual Studio 2022\Projects\LibrarySystem\LibrarySystem\obj\Debug\LibrarySystem.UCBooks.resources
+C:\Users\Beller\Documents\Visual Studio 2022\Projects\LibrarySystem\LibrarySystem\obj\Debug\LibrarySystem.UCDashboard.resources
+C:\Users\Beller\Documents\Visual Studio 2022\Projects\LibrarySystem\LibrarySystem\obj\Debug\LibrarySystem.UCHistory.resources
+C:\Users\Beller\Documents\Visual Studio 2022\Projects\LibrarySystem\LibrarySystem\obj\Debug\LibrarySystem.UCIssueBooks.resources
+C:\Users\Beller\Documents\Visual Studio 2022\Projects\LibrarySystem\LibrarySystem\obj\Debug\LibrarySystem.UCReturnBooks.resources
+C:\Users\Beller\Documents\Visual Studio 2022\Projects\LibrarySystem\LibrarySystem\obj\Debug\LibrarySystem.UCStudents.resources
+C:\Users\Beller\Documents\Visual Studio 2022\Projects\LibrarySystem\LibrarySystem\obj\Debug\LibrarySystem.csproj.GenerateResource.cache
+C:\Users\Beller\Documents\Visual Studio 2022\Projects\LibrarySystem\LibrarySystem\obj\Debug\LibrarySystem.csproj.CoreCompileInputs.cache
+C:\Users\Beller\Documents\Visual Studio 2022\Projects\LibrarySystem\LibrarySystem\obj\Debug\LibrarySystem.exe
+C:\Users\Beller\Documents\Visual Studio 2022\Projects\LibrarySystem\LibrarySystem\obj\Debug\LibrarySystem.pdb

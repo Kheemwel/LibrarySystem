@@ -1,0 +1,282 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{9FF500A0-9445-468B-9381-0AAFE6B09676}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>LibrarySystem</RootNamespace>
+    <AssemblyName>LibrarySystem</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="UserInterfaces\FrmAddBook.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserInterfaces\FrmAddBook.Designer.cs">
+      <DependentUpon>FrmAddBook.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserInterfaces\FrmAddStudent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserInterfaces\FrmAddStudent.Designer.cs">
+      <DependentUpon>FrmAddStudent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserInterfaces\FrmDeleteBook.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserInterfaces\FrmDeleteBook.Designer.cs">
+      <DependentUpon>FrmDeleteBook.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserInterfaces\FrmDeleteStudent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserInterfaces\FrmDeleteStudent.Designer.cs">
+      <DependentUpon>FrmDeleteStudent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserInterfaces\FrmIssueBook.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserInterfaces\FrmIssueBook.Designer.cs">
+      <DependentUpon>FrmIssueBook.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserInterfaces\FrmLogIn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserInterfaces\FrmLogIn.Designer.cs">
+      <DependentUpon>FrmLogIn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserInterfaces\FrmLibrarySystem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserInterfaces\FrmLibrarySystem.Designer.cs">
+      <DependentUpon>FrmLibrarySystem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserInterfaces\FrmRenewIssuedBook.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserInterfaces\FrmRenewIssuedBook.Designer.cs">
+      <DependentUpon>FrmRenewIssuedBook.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserInterfaces\FrmReturnBook.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserInterfaces\FrmReturnBook.Designer.cs">
+      <DependentUpon>FrmReturnBook.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserInterfaces\FrmUpdateBook.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserInterfaces\FrmUpdateBook.Designer.cs">
+      <DependentUpon>FrmUpdateBook.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserInterfaces\FrmUpdateStudent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserInterfaces\FrmUpdateStudent.Designer.cs">
+      <DependentUpon>FrmUpdateStudent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UserInterfaces\UCBooks.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserInterfaces\UCBooks.Designer.cs">
+      <DependentUpon>UCBooks.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserInterfaces\UCDashboard.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserInterfaces\UCDashboard.Designer.cs">
+      <DependentUpon>UCDashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserInterfaces\UCHistory.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserInterfaces\UCHistory.Designer.cs">
+      <DependentUpon>UCHistory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserInterfaces\UCIssueBooks.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserInterfaces\UCIssueBooks.Designer.cs">
+      <DependentUpon>UCIssueBooks.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserInterfaces\UCReturnBooks.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserInterfaces\UCReturnBooks.Designer.cs">
+      <DependentUpon>UCReturnBooks.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserInterfaces\UCStudents.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserInterfaces\UCStudents.Designer.cs">
+      <DependentUpon>UCStudents.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Utilities\SQLDatabaseUtils.cs" />
+    <EmbeddedResource Include="UserInterfaces\FrmAddBook.resx">
+      <DependentUpon>FrmAddBook.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserInterfaces\FrmAddStudent.resx">
+      <DependentUpon>FrmAddStudent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserInterfaces\FrmDeleteBook.resx">
+      <DependentUpon>FrmDeleteBook.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserInterfaces\FrmDeleteStudent.resx">
+      <DependentUpon>FrmDeleteStudent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserInterfaces\FrmIssueBook.resx">
+      <DependentUpon>FrmIssueBook.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserInterfaces\FrmLogIn.resx">
+      <DependentUpon>FrmLogIn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserInterfaces\FrmLibrarySystem.resx">
+      <DependentUpon>FrmLibrarySystem.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserInterfaces\FrmRenewIssuedBook.resx">
+      <DependentUpon>FrmRenewIssuedBook.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserInterfaces\FrmReturnBook.resx">
+      <DependentUpon>FrmReturnBook.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserInterfaces\FrmUpdateBook.resx">
+      <DependentUpon>FrmUpdateBook.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserInterfaces\FrmUpdateStudent.resx">
+      <DependentUpon>FrmUpdateStudent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="UserInterfaces\UCBooks.resx">
+      <DependentUpon>UCBooks.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserInterfaces\UCDashboard.resx">
+      <DependentUpon>UCDashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserInterfaces\UCHistory.resx">
+      <DependentUpon>UCHistory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserInterfaces\UCIssueBooks.resx">
+      <DependentUpon>UCIssueBooks.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserInterfaces\UCReturnBooks.resx">
+      <DependentUpon>UCReturnBooks.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserInterfaces\UCStudents.resx">
+      <DependentUpon>UCStudents.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Add Book Logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\Add Book Icon.png" />
+    <None Include="Resources\Update Student Logo.png" />
+    <None Include="Resources\Search Student Logo .png" />
+    <None Include="Resources\Delete Student Logo.png" />
+    <None Include="Resources\Add Student Logo.png" />
+    <None Include="Resources\Search Return.png" />
+    <None Include="Resources\Search Issue Book.png" />
+    <None Include="Resources\Return BookLogo.png" />
+    <None Include="Resources\Renew Issued Book.png" />
+    <None Include="Resources\Issue Book Logo2.png" />
+    <None Include="Resources\Add Book Icon2.png" />
+    <None Include="Resources\Update Book Logo1.png" />
+    <None Include="Resources\Students Logo1.png" />
+    <None Include="Resources\Search Book Logo1.png" />
+    <None Include="Resources\Return Book Logo1.png" />
+    <None Include="Resources\Issue Book Logo1.png" />
+    <None Include="Resources\History Logo1.png" />
+    <None Include="Resources\Exit Logo1.png" />
+    <None Include="Resources\Delete Book1.png" />
+    <None Include="Resources\Dashboard Logo1.png" />
+    <None Include="Resources\Dashboard Books1.png" />
+    <None Include="Resources\ClearHistoryLogo1.png" />
+    <None Include="Resources\BookShelf1.png" />
+    <None Include="Resources\Books Logo1.png" />
+    <None Include="Resources\Book Shelf LBlue BG1.png" />
+    <None Include="Resources\Book Shelf Blue BG1.png" />
+    <None Include="Resources\Book Black Logo1.jpg" />
+    <None Include="Resources\Admin Logo1.png" />
+    <None Include="Resources\Admin Logo 111.png" />
+    <None Include="Resources\Add Book Logo1.png" />
+    <None Include="Resources\Add Book Icon1.png" />
+    <Content Include="Resources\Admin Logo 11.png" />
+    <Content Include="Resources\Admin Logo.png" />
+    <Content Include="Resources\Book Black Logo.jpg" />
+    <Content Include="Resources\Book Shelf Blue BG.png" />
+    <Content Include="Resources\Book Shelf LBlue BG.png" />
+    <Content Include="Resources\Books Logo.png" />
+    <Content Include="Resources\BookShelf.png" />
+    <Content Include="Resources\ClearHistoryLogo.png" />
+    <Content Include="Resources\Dashboard Books.png" />
+    <Content Include="Resources\Dashboard Logo.png" />
+    <Content Include="Resources\Database.txt.txt" />
+    <Content Include="Resources\Delete Book.png" />
+    <Content Include="Resources\Exit Logo.png" />
+    <Content Include="Resources\History Logo.png" />
+    <Content Include="Resources\Issue Book Logo.png" />
+    <Content Include="Resources\Return Book Logo.png" />
+    <Content Include="Resources\Search Book Logo.png" />
+    <Content Include="Resources\Students Logo.png" />
+    <Content Include="Resources\Update Book Logo.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
