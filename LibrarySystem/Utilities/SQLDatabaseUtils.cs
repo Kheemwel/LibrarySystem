@@ -7,6 +7,7 @@ namespace LibrarySystem.Utilities
         private SQLDatabaseUtils()
         {
             //
+            //
         }
 
         public static string StringConnection => "Data Source=localhost;Initial Catalog=LibrarySystem;Integrated Security=True";
