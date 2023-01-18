@@ -18,7 +18,10 @@ namespace LibrarySystem.Utilities
                 connection.Open();
 
                 // Check if the database already exists if not create new one
-                SqlCommand cmd = new SqlCommand("IF NOT EXISTS (SELECT name FROM sys.databases WHERE name = 'LibrarySystem') BEGIN CREATE DATABASE LibrarySystem END", connection);
+                SqlCommand cmd = new SqlCommand(@"IF NOT EXISTS (SELECT name FROM sys.databases WHERE name = 'LibrarySystem') 
+                                                BEGIN 
+                                                CREATE DATABASE LibrarySystem 
+                                                END", connection);
                 cmd.ExecuteNonQuery();
 
                 // Use the newly created database
