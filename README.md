@@ -1,3 +1,3 @@
 # LibrarySystem
 
-Made by Fhranz Josep Benosa
+Made by Fhranz Joseph Benosa
