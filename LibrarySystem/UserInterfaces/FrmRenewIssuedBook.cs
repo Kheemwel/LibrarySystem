@@ -124,30 +124,15 @@ namespace LibrarySystem
 
         private void bnSearchIssueID_Click(object sender, EventArgs e)
         {
-            int issueID;
-
-            if (tbIssueIDSearch.Text == "")
-            {
-                MessageBox.Show("Issue ID must be a numeric value.", "Error!", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                return;
-            }
-            else
-            {
-                issueID = int.Parse(tbIssueIDSearch.Text);
-            }
-
             using (SqlConnection connection = new SqlConnection(SQLDatabaseUtils.StringConnection))
             {
                 if (string.IsNullOrEmpty(tbIssueIDSearch.Text))
                 {
-                    MessageBox.Show("Please enter a student ID.", "Error!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show("Please enter an Issue ID.", "Error!", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     return;
                 }
-                if (!int.TryParse(tbIssueIDSearch.Text, out int studentID))
-                {
-                    MessageBox.Show("The student ID must be a numeric value.", "Error!", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    return;
-                }
+                int issueID = int.Parse(tbIssueIDSearch.Text);
+
                 connection.Open();
                 string query = "SELECT b.bookName, s.studentFirstName + ' ' + s.studentMiddleInitial + ' ' + s.studentLastName AS studentName, i.dueDate FROM IssueBooks i JOIN Books b ON i.bookID = b.bookID JOIN Students s ON i.studentID = s.studentID WHERE i.issueID = @issueID";
                 using (SqlCommand command = new SqlCommand(query, connection))
