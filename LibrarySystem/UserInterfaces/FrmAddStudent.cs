@@ -161,10 +161,6 @@ namespace LibrarySystem
                     firstNameArray[0] = char.ToUpper(firstNameArray[0]);
                     firstName = new string(firstNameArray);
 
-                    //char[] middleInitialArray = middleInitial.ToCharArray();
-                    //middleInitialArray[0] = char.ToUpper(middleInitialArray[0]);
-                    //middleInitial = new string(middleInitialArray);
-
                     char[] lastNameArray = lastName.ToCharArray();
                     lastNameArray[0] = char.ToUpper(lastNameArray[0]);
                     lastName = new string(lastNameArray);

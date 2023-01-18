@@ -128,7 +128,7 @@ namespace LibrarySystem
 
         private void btnUpdateStudent_Click(object sender, EventArgs e)
         {
-            if (string.IsNullOrEmpty(tbUpdateStudentFirstName.Text) || string.IsNullOrEmpty(tbUpdateStudentMiddleInitial.Text) || string.IsNullOrEmpty(tbUpdateStudentLastName.Text) || string.IsNullOrEmpty(tbUpdateStudentNumber.Text) || string.IsNullOrEmpty(cbUpdateStudentYear.Text) || string.IsNullOrEmpty(cbUpdateStudentCourse.Text) || string.IsNullOrEmpty(tbUpdateEmail.Text) || string.IsNullOrEmpty(tbUpdateContactNumber.Text))
+            if (string.IsNullOrEmpty(tbUpdateStudentFirstName.Text) || string.IsNullOrEmpty(tbUpdateStudentLastName.Text) || string.IsNullOrEmpty(tbUpdateStudentNumber.Text) || string.IsNullOrEmpty(cbUpdateStudentYear.Text) || string.IsNullOrEmpty(cbUpdateStudentCourse.Text) || string.IsNullOrEmpty(tbUpdateEmail.Text) || string.IsNullOrEmpty(tbUpdateContactNumber.Text))
             {
                 MessageBox.Show("Please ensure that all fields are filled out.", "Error!", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
@@ -183,6 +183,7 @@ namespace LibrarySystem
             DialogResult result = MessageBox.Show("Are you sure you want to update this student's record?", "Confirm?", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
             if (result == DialogResult.Yes)
             {
+                tbUpdateStudentMiddleInitial.Text = string.IsNullOrEmpty(tbUpdateStudentMiddleInitial.Text) ? "" : char.IsLetter(tbUpdateStudentMiddleInitial.Text[0]) ? char.ToUpper(tbUpdateStudentMiddleInitial.Text[0]) + tbUpdateStudentMiddleInitial.Text.Substring(1) : "";
                 using (SqlConnection connection = new SqlConnection(SQLDatabaseUtils.StringConnection))
                 {
                     connection.Open();

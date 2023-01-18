@@ -9,7 +9,7 @@ namespace LibrarySystem
     public partial class FrmRenewIssuedBook : Form
     {
         private readonly UCIssueBooks ucIssueBooks;
-       
+
         public FrmRenewIssuedBook(UCIssueBooks uCIssueBooks)
         {
             InitializeComponent();
@@ -45,7 +45,17 @@ namespace LibrarySystem
 
         private void btnRenew_Click(object sender, EventArgs e)
         {
-            int issueID = tbIssueIDSearch.Text == "" ? 0 : int.Parse(tbIssueIDSearch.Text);
+            int issueID;
+            if (string.IsNullOrEmpty(tbIssueIDSearch.Text) || string.IsNullOrEmpty(tbRenewBookName.Text) || string.IsNullOrEmpty(tbRenewStudentName.Text) || string.IsNullOrEmpty(tbRenewDueDate.Text))
+            {
+                MessageBox.Show("Please ensure that all fields are filled out.", "Error!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+            else
+            {
+                issueID = int.Parse(tbIssueIDSearch.Text);
+            }
+
             DateTime newDueDate = dtpRenewNewDueDate.Value;
             DateTime currentDueDate;
             int renewTimes = 0;
@@ -114,7 +124,17 @@ namespace LibrarySystem
 
         private void bnSearchIssueID_Click(object sender, EventArgs e)
         {
-            int issueID = tbIssueIDSearch.Text == "" ? 0 : int.Parse(tbIssueIDSearch.Text);
+            int issueID;
+
+            if (tbIssueIDSearch.Text == "")
+            {
+                MessageBox.Show("Issue ID must be a numeric value.", "Error!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+            else
+            {
+                issueID = int.Parse(tbIssueIDSearch.Text);
+            }
 
             using (SqlConnection connection = new SqlConnection(SQLDatabaseUtils.StringConnection))
             {
