@@ -109,6 +109,7 @@ namespace LibrarySystem
 
                 }
                 tbDeleteBookID.Clear();
+                ucBooks.LoadBooks();
             }
         }
 

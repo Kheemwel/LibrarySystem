@@ -89,6 +89,7 @@ namespace LibrarySystem
                             sqlConnection.Close();
                         }
                     }
+                    ucBooks.LoadBooks();
                 }
             }
         }

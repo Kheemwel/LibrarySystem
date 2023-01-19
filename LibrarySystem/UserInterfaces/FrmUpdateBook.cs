@@ -146,6 +146,7 @@ namespace LibrarySystem
                     tbUpdateAuthor.Clear();
                     tbUpdateQuantity.Clear();
                     connection.Close();
+                    ucBooks.LoadBooks();
                 }
             }
         }
